@@ -1,0 +1,28 @@
+body {
+  overflow-x: hidden;
+  background: #fafafa;
+}
+
+.full-width {
+  width: 100%;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.sticky-page {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content {
+
+}
+
+.container {
+  @media (min-width: 1200px) {
+    width: 1120px;
+  }
+}

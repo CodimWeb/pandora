@@ -1,0 +1,27 @@
+.home-info {
+  text-align: center;
+  padding: 0 100px;
+  margin: 25px 0 50px;
+  p {
+    margin: 0;
+    font-size: 16px;
+    color: #342a39;
+    line-height: 1.2;
+
+    a {
+      display: inline-block;
+      border-bottom: 1px solid #342a39;
+      color: #342a39;
+      line-height: 1.2;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited {
+        color: #342a39;
+        text-decoration: none;
+      }
+    }
+  }
+}

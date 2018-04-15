@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+  font-family: 'tribushet MS Regular';
+  src: url('../fonts/tribushet.eot');
+  src: url('../fonts/tribushet.woff') format('woff'), url('../fonts/tribushet.ttf') format('truetype'), url('../fonts/tribushet.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$rb: 'Roboto';
+
+
+body {
+  font-family: tribushet MS Regular;
+  font-family: tribushet MS Regular, helvetica, sans-serif;
+}

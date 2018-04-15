@@ -1,0 +1,63 @@
+.news {
+  >.row {
+    margin: 0 -15px;
+
+    >div {
+      padding: 0 15px;
+    }
+  }
+
+  &__title {
+    font-family: $rb;
+    font-size: 38px;
+    color: #312736;
+    font-weight: 400;
+    margin: 35px 0 39px;
+  }
+
+  &__item {
+    background: #fff;
+    padding: 15px 15px 25px;
+    border: 1px solid #000;
+    margin-bottom: 25px;
+
+    &__media {
+      margin-bottom: 25px;
+    }
+
+    &__description {
+      height: 165px;
+      text-align: center;
+
+      &__title {
+        font-size: 24px;
+        color: #a19ea2;
+        line-height: 30px;
+        height: 90px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 35px;
+      }
+
+      &__link {
+        font-size: 24px;
+        color: #342a39;
+        display: inline-block;
+        text-decoration: none;
+
+        span {
+          display: inline-block;
+          margin-right: 15px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+          color: #342a39;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

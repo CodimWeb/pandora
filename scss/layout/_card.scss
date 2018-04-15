@@ -1,0 +1,50 @@
+.card {
+  background: #fff;
+  margin: 0 -12px;
+
+  &__left {
+    width: 54%;
+    padding: 0 12px;
+    float: left;
+  }
+
+  &__right {
+    width: 46%;
+    padding: 0 12px;
+    float: left;
+  }
+
+  #sync2 {
+    .item {
+      border: 1px solid transparent;
+      img {
+        width: 100%;
+      }
+
+      &.active {
+        border: 1px solid red;
+      }
+    }
+
+    .my-arrow-left {
+      width: 68px;
+      height: 68px;
+      position: absolute;
+      top: 50%;
+      left: -34px;
+      margin-top: -34px;
+      background: url(../img/main-slider-arrow-left.png) no-repeat center center;
+    }
+
+    .my-arrow-right {
+      width: 68px;
+      height: 68px;
+      position: absolute;
+      top: 50%;
+      right: -34px;
+      margin-top: -34px;
+      background: url(../img/main-slider-arrow-right.png) no-repeat center center;
+    }
+  }
+}
+

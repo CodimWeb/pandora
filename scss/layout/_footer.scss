@@ -1,0 +1,115 @@
+.footer {
+  background: #463b49;
+  padding: 25px 0 55px;
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+  }
+
+  &__left {
+    flex: 0 0 25%;
+  }
+
+  &__right {
+    flex: 0 0 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 126px;
+    height: 48px;
+    display: block;
+    background: url(../img/svg/pandora-look-logo.svg) no-repeat center center /contain;
+    margin-top: -10px;
+  }
+
+  &__social {
+    display: flex;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      margin-right: 5px;
+      a {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        background: #fff;
+        border-radius: 50%;
+        img {
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+  }
+
+  &__item {
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 4px;
+        font-family: thimes new roman;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &.register {
+
+            span {
+              display: inline-block;
+
+              &:first-child {
+                padding-right: 10px;
+                position: relative;
+
+                &:before {
+                  content: '';
+                  width: 1px;
+                  height: 14px;
+                  background: #fff;
+                  position: absolute;
+                  top: 2px;
+                  right: 2px;
+                }
+              }
+            }
+          }
+        }
+
+        &.title {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .copy {
+    flex: 0 0 75%;
+    border-top: 1px solid #fff;
+    margin-top: 15px;
+    padding-top: 8px;
+
+    p {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: right;
+      margin-bottom: 0;
+    }
+  }
+}

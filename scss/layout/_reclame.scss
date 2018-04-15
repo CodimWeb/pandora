@@ -1,0 +1,16 @@
+.reclame {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  margin: 30px -8px 0;
+
+  &__item {
+    padding: 0 8px;
+    margin-bottom: 16px;
+    flex: 0 0 50%;
+
+    &.big {
+      flex: 0 0 100%;
+    }
+  }
+}

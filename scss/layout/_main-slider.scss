@@ -1,0 +1,30 @@
+.main-slider {
+  margin: 0 -34px 20px;
+  padding: 0 34px;
+
+  .item {
+    img {
+      width: 100%;
+    }
+  }
+
+  .my-arrow-left {
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: -34px;
+    margin-top: -34px;
+    background: url(../img/main-slider-arrow-left.png) no-repeat center center;
+  }
+
+  .my-arrow-right {
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    right: -34px;
+    margin-top: -34px;
+    background: url(../img/main-slider-arrow-right.png) no-repeat center center;
+  }
+}
