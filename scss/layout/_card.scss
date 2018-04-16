@@ -6,13 +6,13 @@
   }
 
   &__left {
-    width: 54%;
+    width: 53.5%;
     padding: 0 12px;
     float: left;
   }
 
   &__right {
-    width: 46%;
+    width: 46.5%;
     padding: 0 12px;
     float: left;
   }
@@ -153,6 +153,7 @@
         background: transparent;
         border: none;
         color: #483f50;
+        padding: 6px 0;
 
         img {
           width: 20px;
@@ -176,6 +177,75 @@
         }
       }
     }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin: 50px 0;
+
+    .btn-add {
+      padding: 14px 22px 18px;
+      font-size: 22px;
+      line-height: 1;
+      color: #fff;
+      font-family: $rb;
+      border-radius: 8px;
+      background-image: linear-gradient(to bottom, #554C5D 0%, #2a2132 100%);
+      box-shadow: inset 1px 1px 1px 1px #2a2031;
+      border: 1px solid #9a969e;
+
+      &:hover {
+        background-image: linear-gradient(to bottom, #554C5D 0%, #2a2132 100%);
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+  }
+
+  &__destiny {
+    background: #fafafa;
+    padding: 14px 20px 24px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 20px;
+        color: #342a39;
+        font-family: $rb;
+
+        img {
+          width: 36px;
+          margin-right: 20px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__atention {
+    font-size: 12px;
+    font-family: $rb;
+    color: #0f0c10;
+    border: 2px solid #0f0c10;
+    padding: 5px 11px 7px;
+    margin: 44px 0;
   }
 
 }

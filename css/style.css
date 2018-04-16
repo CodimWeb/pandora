@@ -860,13 +860,13 @@ html {
 }
 
 .card__left {
-  width: 54%;
+  width: 53.5%;
   padding: 0 12px;
   float: left;
 }
 
 .card__right {
-  width: 46%;
+  width: 46.5%;
   padding: 0 12px;
   float: left;
 }
@@ -1011,6 +1011,7 @@ html {
   background: transparent;
   border: none;
   color: #483f50;
+  padding: 6px 0;
 }
 
 .card__price-info .save .btn-save img {
@@ -1028,4 +1029,76 @@ html {
 
 .card__price-info .save .btn-save:hover img {
   transform: translateY(-5px);
+}
+
+.card__action {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-right: 20px;
+  margin: 50px 0;
+}
+
+.card__action .btn-add {
+  padding: 14px 22px 18px;
+  font-size: 22px;
+  line-height: 1;
+  color: #fff;
+  font-family: "Roboto";
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, #554C5D 0%, #2a2132 100%);
+  box-shadow: inset 1px 1px 1px 1px #2a2031;
+  border: 1px solid #9a969e;
+}
+
+.card__action .btn-add:hover {
+  background-image: linear-gradient(to bottom, #554C5D 0%, #2a2132 100%);
+}
+
+.card__action .btn-add:hover, .card__action .btn-add:focus, .card__action .btn-add:active {
+  outline: none;
+}
+
+.card__destiny {
+  background: #fafafa;
+  padding: 14px 20px 24px;
+}
+
+.card__destiny ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.card__destiny ul li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #342a39;
+  font-family: "Roboto";
+}
+
+.card__destiny ul li img {
+  width: 36px;
+  margin-right: 20px;
+}
+
+.card__destiny ul li:last-child {
+  margin-bottom: 0;
+}
+
+.card__atention {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #0f0c10;
+  border: 2px solid #0f0c10;
+  padding: 5px 11px 7px;
+  margin: 44px 0;
 }
