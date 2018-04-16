@@ -12,6 +12,14 @@ body {
   font-family: tribushet MS Regular, helvetica, sans-serif;
 }
 
+* {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
 body {
   overflow-x: hidden;
   background: #fafafa;
@@ -416,7 +424,7 @@ html {
 }
 
 .header__navbar {
-  background: linear-gradient(to right, #453c49 0%, #37293a 51%, #37293a, #453c49 100%);
+  background: linear-gradient(to right, #453c49 0%, #37293a 35%, #37293a 65%, #453c49 100%);
   border: none;
   margin: 0;
   padding: 10px 0 10px;
@@ -812,7 +820,7 @@ html {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
-  padding: 9px 10px;
+  padding: 4px 10px 5px;
   background: #fafafa;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
@@ -845,6 +853,9 @@ html {
 
 .card {
   background: #fff;
+}
+
+.card__row {
   margin: 0 -12px;
 }
 
@@ -860,34 +871,161 @@ html {
   float: left;
 }
 
-.card #sync2 .item {
-  border: 1px solid transparent;
+.card .slider-for {
+  margin-bottom: 50px;
 }
 
-.card #sync2 .item img {
+.card .slider-for .slick-slide .product-item__for-sale {
+  right: 0;
+  top: 0;
+}
+
+.card .slider-for .slick-slide img {
   width: 100%;
 }
 
-.card #sync2 .item.active {
-  border: 1px solid red;
+.card .slider-nav {
+  width: 164px;
+  margin: 0 auto 40px;
 }
 
-.card #sync2 .my-arrow-left {
-  width: 68px;
-  height: 68px;
-  position: absolute;
-  top: 50%;
-  left: -34px;
-  margin-top: -34px;
-  background: url(../img/main-slider-arrow-left.png) no-repeat center center;
+.card .slider-nav .slick-slide {
+  border: 2px solid transparent;
 }
 
-.card #sync2 .my-arrow-right {
-  width: 68px;
-  height: 68px;
+.card .slider-nav .slick-slide img {
+  width: 100%;
+}
+
+.card .slider-nav .slick-slide.slick-current {
+  border-color: #ff0000;
+}
+
+.card .slider-nav .slick-slide.slick-current:focus {
+  outline: none !important;
+}
+
+.card .slider-nav .slick-arrow {
+  width: 15px;
+  height: 26px;
   position: absolute;
   top: 50%;
-  right: -34px;
-  margin-top: -34px;
-  background: url(../img/main-slider-arrow-right.png) no-repeat center center;
+  margin-top: -13px;
+  border: none;
+}
+
+.card .slider-nav .slick-arrow.slick-next {
+  right: -33px;
+  background: url(../img/card-galary-arrow-next.png) no-repeat center center/contain;
+}
+
+.card .slider-nav .slick-arrow.slick-prev {
+  left: -33px;
+  background: url(../img/card-galary-arrow-prev.png) no-repeat center center/contain;
+}
+
+.card__info {
+  padding-top: 8px;
+  padding-right: 10px;
+}
+
+.card__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #131313;
+  font-family: "Roboto";
+  line-height: 22px;
+  margin: 0 0 21px;
+}
+
+.card__article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 37px;
+}
+
+.card__article-title {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #919191;
+  margin: 0;
+}
+
+.card__article-in-stock {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #32af20;
+  margin: 0;
+  line-height: 15px;
+}
+
+.card__price-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.card__price-info .price {
+  font-size: 30px;
+  color: #2e3030;
+  font-family: "Roboto";
+  line-height: 27px;
+}
+
+.card__price-info .price span {
+  font-size: 48px;
+}
+
+.card__price-info .discount .old-price {
+  font-size: 18px;
+  color: #949595;
+  text-decoration: line-through;
+  line-height: 16px;
+  font-family: "Roboto";
+  margin: 0 0 2px;
+}
+
+.card__price-info .discount .economy {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #fe0606;
+  line-height: 16px;
+  margin: 0;
+}
+
+.card__price-info .save .btn-save {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  color: #483f50;
+}
+
+.card__price-info .save .btn-save img {
+  width: 20px;
+  margin-right: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.card__price-info .save .btn-save:hover, .card__price-info .save .btn-save:focus, .card__price-info .save .btn-save:active {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.card__price-info .save .btn-save:hover img {
+  transform: translateY(-5px);
 }

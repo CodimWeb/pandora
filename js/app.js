@@ -34,25 +34,27 @@ $(document).ready(function(){
     ],
   });
 
-  $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: false,
-    asNavFor: '.slider-nav'
-  });
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: true,
-    arrows: true,
-    nextArrow: '<i class="fa fa-arrow-right"></i>',
-    prevArrow: '<i class="fa fa-arrow-left"></i>',
-    focusOnSelect: true
+  //init slick card
+  if(document.querySelector('.slick')) {
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: false,
+      asNavFor: '.slider-nav',
+      infinite: false
+    });
 
-  });
-  
-
+    $('.slider-nav').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      infinite: false,
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      prevArrow:"<button type='button' class='slick-prev'></button>",
+      nextArrow:"<button type='button' class='slick-next'></button>"
+    });
+  }
 });
