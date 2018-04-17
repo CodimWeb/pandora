@@ -15,7 +15,7 @@
     top: 50%;
     left: -34px;
     margin-top: -34px;
-    background: url(../img/main-slider-arrow-left.png) no-repeat center center;
+    background: url(../img/svg/slider_arrow_left.svg) no-repeat center center /contain;
   }
 
   .my-arrow-right {
@@ -25,6 +25,6 @@
     top: 50%;
     right: -34px;
     margin-top: -34px;
-    background: url(../img/main-slider-arrow-right.png) no-repeat center center;
+    background: url(../img/svg/slider_arrow_right.svg) no-repeat center center /contain;
   }
 }

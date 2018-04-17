@@ -42,6 +42,22 @@
           }
         }
       }
+
+      &:before {
+        content: '';
+        width: 6px;
+        height: 10px;
+        background: url(../img/svg/arrow_bred.svg) no-repeat center center /contain;
+        position: absolute;
+        top: 6px;
+        right: 11px;
+      }
+
+      &:last-child {
+        &:before {
+          content: none;
+        }
+      }
     }
   }
 }

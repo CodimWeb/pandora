@@ -57,4 +57,38 @@ $(document).ready(function(){
       nextArrow:"<button type='button' class='slick-next'></button>"
     });
   }
+
+  $(".recomend-slider").owlCarousel({
+    items : 3,
+    navigation : true,
+    pagination: false,
+    loop:true,
+    margin: 30,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    nav:true,
+    navText: [
+      "<i class='my-arrow-left'></i>",
+      "<i class='my-arrow-right'></i>"
+    ],
+  });
+
+  $('.recomend-slider .product-item').on('mouseenter',function(e){
+    $(this).parents('.recomend-slider').trigger('stop.owl.autoplay');
+    console.log('enter');
+  })
+
+  $('.recomend-slider .product-item').on('mouseleave',function(e){
+    $(this).parents('.recomend-slider').trigger('play.owl.autoplay');
+  })
+
+  if(document.querySelector('.card__size')) {
+    $('.card__size').select2({
+      placeholder: 'Размер:',
+      width: '100%',
+      theme: "bootstrap",
+      minimumResultsForSearch: Infinity
+    });
+  }
+  
 });
