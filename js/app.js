@@ -90,5 +90,17 @@ $(document).ready(function(){
       minimumResultsForSearch: Infinity
     });
   }
+
+  $('.select__filter').each(function(){
+    var placeholder = $(this).data('placeholder');
+
+    $(this).multiselect({
+      minHeight: 0,
+      maxHeight: 250,
+      texts: {
+          placeholder: placeholder,
+      }
+    });
+  });
   
 });

@@ -1326,3 +1326,160 @@ html {
   max-height: 150px;
   overflow: auto;
 }
+
+.category__baner {
+  margin: 12px 0;
+}
+
+.category__nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #463b49;
+}
+
+.category__nav__title {
+  font-size: 16px;
+  color: #fff;
+  min-width: 190px;
+  padding: 0 10px 0 16px;
+  text-transform: uppercase;
+}
+
+.category__nav__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+
+.category__nav__list li {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.category__nav__list li a {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  padding: 3px 0;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.category__nav__list li a:hover {
+  background: #fff;
+  color: #463b49;
+}
+
+.category__nav__list li a:hover, .category__nav__list li a:focus, .category__nav__list li a:active, .category__nav__list li a:visited {
+  text-decoration: none;
+}
+
+.category__nav__list li.active a {
+  background: #fff;
+  color: #463b49;
+}
+
+.category__nav__list li:last-child {
+  margin-right: -1px;
+}
+
+.category__filters {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  background: #fff;
+  padding: 20px 15px 15px;
+}
+
+.category__filters > div:first-child {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.category__filters__item {
+  width: 140px;
+  margin-right: 24px;
+}
+
+.category__filters__item .ms-options-wrap {
+  position: relative;
+}
+
+.category__filters__item .ms-options-wrap > button:focus,
+.category__filters__item .ms-options-wrap > button {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 20px 6px 15px;
+  color: #483e4c;
+}
+
+.category__filters__item .ms-options-wrap > button:after {
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #cacaca;
+  border-bottom: 2px solid #cacaca;
+  border-right: none;
+  border-top: none;
+  transform: rotateZ(-45deg);
+  right: 12px;
+  top: 13px;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options {
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options ul {
+  padding: 5px;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options ul li label {
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0 0 0 24px;
+  border: none;
+  background: transparent;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options ul li label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options ul li label:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: -1px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options ul li label:hover {
+  border: none;
+  background: transparent;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options ul li.selected label {
+  background: transparent;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options ul li.selected label:before {
+  background: url(../img/check-2.png) center center no-repeat #bfbfbf;
+}

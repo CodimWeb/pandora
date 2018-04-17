@@ -1,0 +1,167 @@
+.category {
+
+  &__baner {
+    margin: 12px 0;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    background: #463b49;
+
+    &__title {
+      font-size:  16px;
+      color: #fff;
+      min-width: 190px;
+      padding: 0 10px 0 16px;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      display: flex;
+      flex: 1;
+      margin: 0;
+      padding: 0;
+      list-style-type:  none;
+      overflow-x: hidden;
+
+      li {
+        flex-grow: 1;
+
+        a {
+          font-size:  16px;
+          color: #fff;
+          text-transform: uppercase;
+          display: block;
+          padding: 3px 0;
+          text-align: center;
+          transition: 0.3s ease-in-out;
+
+
+          &:hover {
+            background: #fff;
+            color: #463b49;
+          }
+
+          &:hover,
+          &:focus,
+          &:active,
+          &:visited {
+            text-decoration: none;
+          }
+        }
+
+        &.active {
+          a {
+            background: #fff;
+            color: #463b49;
+          }
+        }
+
+        &:last-child {
+          margin-right: -1px;
+        }
+      }
+    }
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px 15px 15px;
+
+    >div {
+
+      &:first-child {
+        display: flex;
+      }
+    }
+
+
+    &__item {
+      width: 140px;
+      margin-right: 24px;
+
+      .ms-options-wrap {
+        position: relative;
+      }
+
+      .ms-options-wrap > button:focus,
+      .ms-options-wrap > button {
+        background: #f5f5f5;
+        border: none;
+        border-radius: 6px;
+        padding: 6px 20px 6px 15px;
+        color: #483e4c;
+      }
+
+      .ms-options-wrap > button:after {
+        width: 8px;
+        height: 8px;
+        border-left: 2px solid #cacaca;
+        border-bottom: 2px solid #cacaca;
+        border-right: none;
+        border-top: none;
+        transform: rotateZ(-45deg);
+        right: 12px;
+        top: 13px;
+      }
+
+      .ms-options-wrap > .ms-options {
+        left: 0;
+        right: 0;
+        width: auto;
+
+        ul {
+          padding: 5px;
+
+          li {
+
+            label {
+              font-weight: 400;
+              font-size: 12px;
+              padding: 0 0 0 24px;
+              border: none;
+              background: transparent;
+
+              input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+              }
+
+              &:before {
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                left: 0;
+                top: -1px;
+                border: 1px solid #cfcfcf;
+                border-radius: 4px;
+                background: #fff;
+              }
+
+              &:hover {
+                border: none;
+                background: transparent;
+              }
+            }
+
+            &.selected {
+
+              label {
+                background: transparent;
+
+                &:before {
+                  background: url(../img/check-2.png) center center no-repeat #bfbfbf;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
