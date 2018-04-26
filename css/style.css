@@ -680,7 +680,7 @@ html {
   padding: 0 15px;
 }
 
-.news__title {
+.news__title-home {
   font-family: "Roboto";
   font-size: 38px;
   color: #312736;
@@ -691,7 +691,6 @@ html {
 .news__item {
   background: #fff;
   padding: 15px 15px 25px;
-  border: 1px solid #000;
   margin-bottom: 25px;
 }
 
@@ -1482,4 +1481,101 @@ html {
 
 .category__filters__item .ms-options-wrap > .ms-options ul li.selected label:before {
   background: url(../img/check-2.png) center center no-repeat #bfbfbf;
+}
+
+.news-details__wrapper {
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.news-details {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #312736;
+  padding-bottom: 80px;
+  background: #fff;
+}
+
+.news-details__title {
+  font-size: 48px;
+  color: #000f00;
+  font-family: georgia;
+  margin: 40px 0;
+}
+
+.news-details p {
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+.news-details p:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.news-details__big {
+  display: block;
+  width: 100%;
+  margin: 50px 0 60px;
+}
+
+.news-details__small {
+  width: 50%;
+}
+
+.news-details__small.left {
+  float: left;
+  margin-right: 25px;
+}
+
+.news-details__small.right {
+  float: right;
+  margin-left: 25px;
+}
+
+.news-details__subtitle {
+  font-size: 36px;
+  margin: 50px 0;
+  font-family: georgia;
+  color: #000f00;
+}
+
+.news-details__social {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.news-details .btn-news-details {
+  font-weight: 700;
+  color: #463b49;
+  border: 2px solid #463b49;
+  border-radius: 0;
+  padding: 0;
+  width: 248px;
+  height: 50px;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 46px;
+  transition: 0.3s ease-in-out;
+}
+
+.news-details .btn-news-details span {
+  line-height: 1;
+}
+
+.news-details .btn-news-details:hover {
+  background: #463b49;
+  color: #fff;
+}
+
+.news-details .btn-news-details:focus, .news-details .btn-news-details:active {
+  box-shadow: none;
+  background: #fff;
+}
+
+.news-details--more {
+  margin-bottom: 40px;
 }
