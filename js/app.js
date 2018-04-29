@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  if(document.querySelector('.order-form__phone')) {
+    $('.order-form__phone').mask("+38 (999) 999-99-99");
+  }
+
   var footerHeight = $('.footer').outerHeight();
   $('.sticky-page').css({
     'padding-bottom': footerHeight
@@ -87,9 +91,12 @@ $(document).ready(function(){
       placeholder: 'Размер:',
       width: '100%',
       theme: "bootstrap",
-      minimumResultsForSearch: Infinity
+      minimumResultsForSearch: Infinity,
+      'containerCssClass': 'card__size-container',
+      'dropdownCssClass': 'card__size-dropdown',
     });
   }
+
 
   $('.select__filter').each(function(){
     var placeholder = $(this).data('placeholder');
@@ -102,5 +109,15 @@ $(document).ready(function(){
       }
     });
   });
+
+//select order-form
+  $('.delivery-method-item').on('click', function(e){
+    e.preventDefault();
+    var text = $(this).text();
+    $('#delivery-method .selected').text(text);
+  });
+// end
+
+
   
 });
