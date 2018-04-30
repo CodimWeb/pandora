@@ -1,0 +1,29 @@
+.login-form {
+  margin-top: 40px;
+  margin-left: 30px;
+
+  .btn-add {
+    width: 126px;
+    padding: 12px 22px 12px;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    font-family: $rr;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, #554C5D 0%, #2a2132 100%);
+    box-shadow: inset 1px 1px 1px 1px #2a2031;
+    border: 1px solid #9a969e;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-image: linear-gradient(to bottom, #2a2132 0%, #554C5D 100%);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+  }
+}
