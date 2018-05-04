@@ -332,6 +332,27 @@
 
   .form-group {
     margin-bottom: 25px;
+
+    &-kapcha {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+
+      >div {
+        &:first-child {
+          width: 130px;
+          text-align: center;
+          margin-right: 15px;
+        }
+
+        &:last-child {
+          width: 145px;
+          input {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
 
   label {
@@ -500,5 +521,12 @@
     &:visited {
       text-decoration: none;
     }
+  }
+
+  .register-apply {
+    font-size: 12px;
+    font-family: $rm;
+    color: #8a8686;
+    margin-bottom: 40px;
   }
 }

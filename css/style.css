@@ -1152,10 +1152,6 @@ html {
   outline: none;
 }
 
-.card__action .btn-add:active {
-  transform: scale(0.95);
-}
-
 .card__action > div:nth-child(2) {
   width: 150px;
 }
@@ -1968,6 +1964,28 @@ html {
   margin-bottom: 25px;
 }
 
+.order-form .form-group-kapcha {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 40px;
+}
+
+.order-form .form-group-kapcha > div:first-child {
+  width: 130px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.order-form .form-group-kapcha > div:last-child {
+  width: 145px;
+}
+
+.order-form .form-group-kapcha > div:last-child input {
+  margin-bottom: 0;
+}
+
 .order-form label {
   font-size: 12px;
   color: #253345;
@@ -2136,6 +2154,13 @@ html {
   text-decoration: none;
 }
 
+.order-form .register-apply {
+  font-size: 12px;
+  font-family: "Roboto-Medium";
+  color: #8a8686;
+  margin-bottom: 40px;
+}
+
 .cabinet {
   background: #fff;
   padding: 50px 20px 0;
@@ -2222,8 +2247,8 @@ html {
 }
 
 .login-form .btn-add {
-  width: 126px;
-  padding: 12px 22px 12px;
+  width: auto;
+  padding: 12px 30px 12px;
   font-size: 16px;
   line-height: 1;
   color: #fff;
