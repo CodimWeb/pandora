@@ -75,6 +75,26 @@ $(document).ready(function(){
       "<i class='my-arrow-left'></i>",
       "<i class='my-arrow-right'></i>"
     ],
+    responsive : {
+      // breakpoint from 0 up
+      0 : {
+          items : 1,
+      },
+      // breakpoint from 480 up
+      480 : {
+          items : 2,
+      },
+      // breakpoint from 768 up
+      768 : {
+          items : 3,
+          margin: 15,
+      },
+      // breakpoint from 992 up
+      992 : {
+          items : 3,
+          // margin: 15,
+      }
+    }
   });
 
   $('.recomend-slider .product-item').on('mouseenter',function(e){

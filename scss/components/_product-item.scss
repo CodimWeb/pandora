@@ -3,6 +3,22 @@
 
   >div {
     padding: 0 15px;
+
+    @media (max-width: 991px) {
+      padding: 0 10px;
+    }
+
+    @media (max-width: 767px) {
+      width: 50%;
+    }
+
+    @media (max-width: 479px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    margin: 0 -10px;
   }
 }
 
@@ -11,7 +27,7 @@
   height: 485px;
   background: #fff;
   position: relative;
-  padding: 20px 10px 10px;
+  padding: 20px 10px 0;
   margin-bottom: 30px;
   overflow: hidden;
 
@@ -35,21 +51,71 @@
       width: auto;
       max-width: 93%;
       max-height: 250px;
+
+      @media (max-width: 1199px) {
+        max-height: 230px;
+      }
+
+      @media (max-width: 991px) {
+        max-height: 200px;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      height: 230px;
+      line-height: 230px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 991px) {
+      height: 200px;
+      line-height: 200px;
+      margin-bottom: 20px;
     }
   }
 
   &__description {
     text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    height: 158px;
+
+    .name-wrap {
+      margin: 0 0 15px;
+
+      @media (max-width: 991px) {
+        margin: 0 0 10px;
+      }
+    }
 
     .name {
       width: 100%;
       font-size: 18px;
-      line-height: 18px;
-      height: 18px;
+      line-height: 20px;
+      max-height: 40px;
       overflow: hidden;
       text-align: center;
       margin: 0 0 10px;
       color: #505050;
+
+      a {
+        color: #505050;
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+          text-decoration: none;
+        }
+      }
+
+      @media (max-width: 991px) {
+        font-size: 16px;
+        line-height: 18px;
+        max-height: 36px;
+        margin: 0 0 8px;
+      }
     }
 
     .id {
@@ -59,7 +125,7 @@
       height: 16px;
       overflow: hidden;
       text-align: center;
-      margin: 0 0 19px;
+      // margin: 0 0 19px;
       color: #505050;
     }
 
@@ -80,6 +146,9 @@
     }
 
     .economy {
+      position: absolute;
+      left: 0;
+      bottom: 15px;
       width: 100%;
       font-size: 14px;
       line-height: 16px;
@@ -88,6 +157,10 @@
       text-align: center;
       margin: 0;
       color: #db052b;
+    }
+
+    @media (max-width: 991px) {
+      height: 145px;
     }
   }
 
@@ -164,8 +237,41 @@
 
       span {
         font-size: 24px;
+
+        @media (max-width: 991px) {
+          font-size: 22px;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+
+      @media (max-width: 991px) {
+        font-size: 26px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 24px;
       }
     }
+  }
 
+  @media (max-width: 1199px) {
+    height: 435px;
+  }
+
+  @media (max-width: 991px) {
+    height: 385px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  @media (max-width: 479px) {
+    max-width: 320px;
+    margin: 0 auto 30px;
   }
 }

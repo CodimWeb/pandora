@@ -17,6 +17,10 @@
       line-height: 1.2;
       font-size: 18px;
       color: #341e37;
+
+      @media (max-width: 1199px) {
+        font-size: 16px;
+      }
     }
   }
 }
