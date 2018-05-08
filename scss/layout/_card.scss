@@ -14,6 +14,10 @@
     @media (max-width: 991px) {
       width: 50%;
     }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   &__right {
@@ -23,6 +27,10 @@
 
     @media (max-width: 991px) {
       width: 50%;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
     }
   }
 
@@ -164,6 +172,10 @@
           font-size: 16px;
         }
       }
+
+      @media (max-width: 767px) {
+        margin: 0 20px;
+      }
     }
 
     .save {
@@ -209,10 +221,18 @@
         margin-top: 10px;
         flex: 1;
       }
+
+      @media (max-width: 767px) {
+        flex: 0;
+      }
     }
 
     @media (max-width: 991px) {
       flex-wrap: wrap;
+    }
+
+    @media (max-width: 767px) {
+      justify-content: flex-start;
     }
   }
 
@@ -272,6 +292,10 @@
     @media (max-width: 991px) {
       margin: 30px 0;
       padding-right: 0;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: row-reverse;
     }
   }
 
@@ -412,6 +436,11 @@
             @media (max-width: 991px) {
               font-size: 16px;
             }
+
+            @media (max-width: 767px) {
+              font-size: 12px;
+              text-transform: uppercase;
+            }
           }
 
           &.active {
@@ -432,6 +461,11 @@
         font-size: 18px;
         line-height: 1.2;
         font-family: $rr;
+
+        @media (max-width: 767px) {
+          font-size: 16px;
+          padding: 20px;
+        }
       }
     }
   }
@@ -468,6 +502,13 @@
         left: -29px;
         margin-top: -29px;
         background: url(../img/svg/slider_arrow_left.svg) no-repeat center center /contain;
+
+        @media (max-width: 767px) {
+          width: 40px;
+          height: 40px;
+          left: 5px;
+          margin-top: -20px;
+        }
       }
 
       .my-arrow-right {
@@ -478,6 +519,13 @@
         right: -29px;
         margin-top: -29px;
         background: url(../img/svg/slider_arrow_right.svg) no-repeat center center /contain;
+
+        @media (max-width: 767px) {
+          width: 40px;
+          height: 40px;
+          right: 5px;
+          margin-top: -20px;
+        }
       }
     }
   }

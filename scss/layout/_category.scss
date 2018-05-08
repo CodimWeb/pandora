@@ -1,5 +1,9 @@
 .category {
 
+  &-wrap {
+    margin-bottom: 25px;
+  }
+
   &__baner {
     margin: 12px 0;
   }
@@ -162,6 +166,108 @@
           }
         }
       }
+    }
+
+    .reset {
+      .btn-default {
+        font-size: 13px;
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 6px;
+        padding: 6px 15px 6px 40px;
+        color: #483e4c;
+        //background-image: url(../img);
+
+        &:hover,
+        &:focus,
+        &:active {
+          box-shadow: none;
+          background-color: #f5f5f5;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.sort-wrap {
+  min-width: 190px;
+}
+
+.select2-container .sort-container.select2-selection--single {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 32px 6px 10px;
+  height: auto;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #cacaca;
+    border-bottom: 2px solid #cacaca;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    transform: rotateZ(-45deg);
+  }
+}
+
+.select2-container .sort-container.select2-selection--single .select2-selection__rendered {
+  padding: 0;
+  text-align: left;
+}
+
+.sort-dropdown.select2-dropdown {
+  border: 1px solid #f1f2f5;
+  background: #fafafa;
+}
+
+.sort-dropdown .select2-results__options {
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.sort-dropdown .select2-results__option {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.filters-action {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0 0 32px;
+  margin: -5px 0 0 0;
+  background: #fff;
+
+  &__item {
+    list-style-type: none;
+    padding: 6px 20px 6px 4px;
+    position: relative;
+    font-size: 13px;
+    margin-right: 15px;
+
+    .item-close {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: url(../img/item-delete.png) no-repeat top center;
+      background-size: 11px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-46%);
+      cursor: pointer;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

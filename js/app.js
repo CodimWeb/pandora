@@ -83,6 +83,7 @@ $(document).ready(function(){
       // breakpoint from 480 up
       480 : {
           items : 2,
+          margin: 15,
       },
       // breakpoint from 768 up
       768 : {
@@ -117,7 +118,20 @@ $(document).ready(function(){
     });
   }
 
+  if(document.querySelector('.sort')) {
+    $('.sort').select2({
+      placeholder: 'Сортировка',
+      width: '100%',
+      theme: "bootstrap",
+      minimumResultsForSearch: Infinity,
+      'containerCssClass': 'sort-container',
+      'dropdownCssClass': 'sort-dropdown',
+    });
+  }
 
+
+
+//multiselect
   $('.select__filter').each(function(){
     var placeholder = $(this).data('placeholder');
 
