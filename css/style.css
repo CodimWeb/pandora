@@ -2675,6 +2675,7 @@ html {
 .news-details__wrapper {
   background: #fff;
   margin-bottom: 20px;
+  padding: 0 15px;
 }
 
 .news-details {
@@ -2684,6 +2685,7 @@ html {
   font-size: 16px;
   color: #312736;
   padding-bottom: 80px;
+  padding-top: 20px;
   background: #fff;
 }
 
@@ -2691,7 +2693,14 @@ html {
   font-size: 48px;
   color: #000f00;
   font-family: georgia;
-  margin: 40px 0;
+  margin: 0 0 40px;
+}
+
+@media (max-width: 479px) {
+  .news-details__title {
+    font-size: 26px;
+    margin: 0 0 30px;
+  }
 }
 
 .news-details p {
@@ -2711,6 +2720,12 @@ html {
   margin: 50px 0 60px;
 }
 
+@media (max-width: 767px) {
+  .news-details__big {
+    margin: 30px 0 50px;
+  }
+}
+
 .news-details__small {
   width: 50%;
 }
@@ -2720,9 +2735,29 @@ html {
   margin-right: 25px;
 }
 
+@media (max-width: 767px) {
+  .news-details__small.left {
+    float: none;
+    margin: 0 0 20px;
+  }
+}
+
 .news-details__small.right {
   float: right;
   margin-left: 25px;
+}
+
+@media (max-width: 767px) {
+  .news-details__small.right {
+    float: none;
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news-details__small {
+    width: 100%;
+  }
 }
 
 .news-details__subtitle {
@@ -2730,6 +2765,20 @@ html {
   margin: 50px 0;
   font-family: georgia;
   color: #000f00;
+}
+
+@media (max-width: 767px) {
+  .news-details__subtitle {
+    font-size: 32px;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .news-details__subtitle {
+    font-size: 26px;
+    margin: 25px 0;
+  }
 }
 
 .news-details__social {
@@ -2787,9 +2836,35 @@ html {
   float: left;
 }
 
+@media (max-width: 1199px) {
+  .basket__left-side {
+    width: 83%;
+  }
+}
+
+@media (max-width: 991px) {
+  .basket__left-side {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .basket__right-side {
   width: 14.5%;
   float: left;
+}
+
+@media (max-width: 1199px) {
+  .basket__right-side {
+    width: 17%;
+  }
+}
+
+@media (max-width: 991px) {
+  .basket__right-side {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .basket__title {
@@ -2797,6 +2872,12 @@ html {
   margin: 0 0 30px;
   font-weight: 500;
   font-family: "Roboto-Medium";
+}
+
+@media (max-width: 767px) {
+  .basket__title {
+    margin: 0 0 15px;
+  }
 }
 
 .basket__subtitle {
@@ -2808,6 +2889,12 @@ html {
 .basket__subtitle span {
   font-weight: 500;
   font-family: "Roboto-Medium";
+}
+
+@media (max-width: 767px) {
+  .basket__subtitle {
+    margin: 0 0 10px;
+  }
 }
 
 .basket__discount {
@@ -2828,6 +2915,12 @@ html {
   font-family: "Roboto-Medium";
 }
 
+@media (max-width: 767px) {
+  .basket__total {
+    margin-bottom: 10px;
+  }
+}
+
 .basket__list__title {
   font-size: 20px;
   font-weight: 500;
@@ -2839,6 +2932,18 @@ html {
   margin: 0 0 90px;
   padding: 0;
   list-style-type: none;
+}
+
+@media (max-width: 767px) {
+  .basket__list {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 479px) {
+  .basket__list {
+    margin-bottom: 40px;
+  }
 }
 
 .basket__item {
@@ -2890,6 +2995,13 @@ html {
   text-decoration: none;
 }
 
+@media (max-width: 767px) {
+  .basket__item__description .name {
+    line-height: 20px;
+    max-height: 40px;
+  }
+}
+
 .basket__item__description .status {
   font-size: 12px;
   font-family: "Roboto-Medium";
@@ -2903,6 +3015,19 @@ html {
   color: #453c49;
   font-family: "Roboto-Medium";
   margin: 0;
+}
+
+@media (max-width: 1199px) {
+  .basket__item__description {
+    width: 57%;
+  }
+}
+
+@media (max-width: 767px) {
+  .basket__item__description {
+    padding: 0 10px 0 15px;
+    width: calc(100% - 80px);
+  }
 }
 
 .basket__item__action {
@@ -2995,6 +3120,27 @@ html {
   transform: translateY(-3px);
 }
 
+@media (max-width: 1199px) {
+  .basket__item__action {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .basket__item__action {
+    width: 75px;
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .basket__item__action {
+    float: left;
+    margin-top: 8px;
+    margin-left: 88px;
+  }
+}
+
 .basket__item .btn-delete {
   width: 12px;
   height: 12px;
@@ -3010,14 +3156,45 @@ html {
   background-position: left bottom;
 }
 
+@media (max-width: 767px) {
+  .basket__item .btn-delete {
+    top: 15px;
+    right: 10px;
+  }
+}
+
 .basket__item:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .basket__item {
+    padding: 15px 40px 15px 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  .basket__item {
+    padding: 15px 30px 15px 15px;
+  }
 }
 
 .basket__recomend__title {
   font-size: 18px;
   font-family: "Roboto-Medium";
   margin: 0 0 35px;
+}
+
+@media (max-width: 1199px) {
+  .basket__recomend__title {
+    text-align: right;
+  }
+}
+
+@media (max-width: 991px) {
+  .basket__recomend__title {
+    text-align: left;
+  }
 }
 
 .basket__recomend-item {
@@ -3077,6 +3254,40 @@ html {
   text-decoration: none;
 }
 
+@media (max-width: 991px) {
+  .basket__recomend-item {
+    max-width: none;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .basket__recomend-item {
+    width: 33.333%;
+  }
+}
+
+@media (max-width: 479px) {
+  .basket__recomend-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .basket {
+    padding: 30px 10px 0 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .basket {
+    padding: 20px 0 0 0;
+  }
+}
+
 .order-form {
   width: 100%;
   max-width: 605px;
@@ -3088,6 +3299,13 @@ html {
   font-family: "Roboto-Regular";
   margin-bottom: 40px;
   margin-top: 0;
+}
+
+@media (max-width: 479px) {
+  .order-form__title {
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 .order-form .form-group {
@@ -3170,6 +3388,12 @@ html {
   color: #949494;
 }
 
+@media (max-width: 479px) {
+  .order-form .form-control {
+    margin-left: 0;
+  }
+}
+
 .order-form .dropdown .btn-default {
   display: block;
   width: 100%;
@@ -3250,6 +3474,15 @@ html {
       flex-wrap: wrap;
 }
 
+@media (max-width: 479px) {
+  .order-form__action {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+
 .order-form .btn-order {
   width: 210px;
   height: 46px;
@@ -3272,6 +3505,12 @@ html {
   outline: none;
 }
 
+@media (max-width: 479px) {
+  .order-form .btn-order {
+    margin: 0 0 20px;
+  }
+}
+
 .order-form .btn-continue {
   font-size: 16px;
   text-transform: uppercase;
@@ -3289,6 +3528,12 @@ html {
   font-family: "Roboto-Medium";
   color: #8a8686;
   margin-bottom: 40px;
+}
+
+@media (max-width: 479px) {
+  .order-form {
+    padding: 0 10px 40px;
+  }
 }
 
 .cabinet {
