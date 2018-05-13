@@ -382,6 +382,12 @@ html {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .cabinet-menu__item {
+    margin-bottom: 0;
+  }
+}
+
 .cabinet-menu__link {
   font-family: "Roboto-Regular";
   font-size: 16px;
@@ -3388,7 +3394,7 @@ html {
   color: #949494;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .order-form .form-control {
     margin-left: 0;
   }
@@ -3539,6 +3545,7 @@ html {
 .cabinet {
   background: #fff;
   padding: 50px 20px 0;
+  position: relative;
 }
 
 .cabinet__row {
@@ -3551,10 +3558,39 @@ html {
   width: 32%;
 }
 
+@media (max-width: 767px) {
+  .cabinet-left {
+    float: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background: #f6f6f6;
+    bottom: 0;
+    width: 250px;
+    padding-top: 30px;
+    transform: translateX(-100%);
+    overflow-y: auto;
+    transition: 0.3s ease-in-out;
+  }
+  .cabinet-left.active {
+    transform: translateX(0);
+  }
+}
+
 .cabinet-right {
   float: left;
   padding: 0 12px;
   width: 68%;
+}
+
+@media (max-width: 767px) {
+  .cabinet-right {
+    float: none;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
 
 .cabinet__title {
@@ -3562,6 +3598,79 @@ html {
   margin: 0 0 20px;
   font-family: "Roboto-Medium";
   margin-left: 30px;
+}
+
+@media (max-width: 479px) {
+  .cabinet__title {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .cabinet__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+  }
+  .cabinet__backdrop.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.cabinet__menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .cabinet__menu {
+    display: block;
+    width: 22px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .cabinet__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    margin-bottom: 4px;
+  }
+  .cabinet__menu span:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cabinet__close {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .cabinet__close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/item-delete.png) no-repeat top left;
+    background-size: 19px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .cabinet {
+    padding: 40px 10px 0;
+  }
 }
 
 .order-info {
@@ -3618,7 +3727,7 @@ html {
 
 .login-form {
   margin-top: 40px;
-  margin-left: 30px;
+  padding-left: 30px;
 }
 
 .login-form .btn-add {
@@ -3641,4 +3750,10 @@ html {
 
 .login-form .btn-add:hover, .login-form .btn-add:focus, .login-form .btn-add:active {
   outline: none;
+}
+
+@media (max-width: 767px) {
+  .login-form {
+    padding-left: 0;
+  }
 }

@@ -153,5 +153,15 @@ $(document).ready(function(){
 // end
 
 
+$('.cabinet__menu').on('click', function(){
+  $('.cabinet__backdrop').toggleClass('active');
+  $('.cabinet-left').toggleClass('active');
+});
+
+$('.cabinet__close').on('click', function(){
+  $('.cabinet__backdrop').toggleClass('active');
+  $('.cabinet-left').toggleClass('active');
+});
+
   
 });
