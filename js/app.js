@@ -171,7 +171,7 @@ $(document).on("click.bs.dropdown.data-api", ".noclose", function (e) { e.stopPr
     console.log($('.dropdown.open input:checkbox:checked').length);
     var length = $('.dropdown.open input:checkbox:checked').length;
     if(length  < 1) {
-      var name = $(this).parents('dropdown').find('button').data('name');
+      var name = $(this).parents('.dropdown').find('button').data('name');
     } else if (length == 1) {
       var name = $(this).siblings('label').text();
     } else {
