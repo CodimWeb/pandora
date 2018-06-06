@@ -98,6 +98,7 @@ html {
   padding: 20px 10px 0;
   margin-bottom: 30px;
   overflow: hidden;
+  animation: append 0.5s linear;
 }
 
 .product-item__for-sale {
@@ -338,6 +339,18 @@ html {
 @media (max-width: 767px) {
   .product-item.show-more-item p {
     font-size: 24px;
+  }
+}
+
+@keyframes append {
+  from {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
