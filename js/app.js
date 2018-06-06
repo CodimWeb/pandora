@@ -131,18 +131,18 @@ $(document).ready(function(){
 
 
 
-//multiselect
-  $('.select__filter').each(function(){
-    var placeholder = $(this).data('placeholder');
+// //multiselect
+//   $('.select__filter').each(function(){
+//     var placeholder = $(this).data('placeholder');
 
-    $(this).multiselect({
-      minHeight: 0,
-      maxHeight: 250,
-      texts: {
-          placeholder: placeholder,
-      }
-    });
-  });
+//     $(this).multiselect({
+//       minHeight: 0,
+//       maxHeight: 250,
+//       texts: {
+//           placeholder: placeholder,
+//       }
+//     });
+//   });
 
 //select order-form
   $('.delivery-method-item').on('click', function(e){
@@ -163,5 +163,21 @@ $('.cabinet__close').on('click', function(){
   $('.cabinet-left').toggleClass('active');
 });
 
+$(document).on("click.bs.dropdown.data-api", ".noclose", function (e) { e.stopPropagation() });
+
+
+  $('body').on('change',".filter-check", function (){
+    console.log($(this));
+    console.log($('.dropdown.open input:checkbox:checked').length);
+    var length = $('.dropdown.open input:checkbox:checked').length;
+    if(length  < 1) {
+      var name = $(this).parents('dropdown').find('button').data('name');
+    } else if (length == 1) {
+      var name = $(this).siblings('label').text();
+    } else {
+      var name = 'Выбрано ' + length;
+    }
+    $('.dropdown.open .category__filters__name').text(name);
+  });
   
 });

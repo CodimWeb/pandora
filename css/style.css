@@ -2476,6 +2476,10 @@ html {
   margin-bottom: 5px;
 }
 
+.category__filters__item .dropdown-menu {
+  min-width: 0;
+}
+
 .category__filters__item .ms-options-wrap {
   position: relative;
 }
@@ -2505,27 +2509,26 @@ html {
   left: 0;
   right: 0;
   width: auto;
-}
-
-.category__filters__item .ms-options-wrap > .ms-options ul {
   padding: 5px;
 }
 
-.category__filters__item .ms-options-wrap > .ms-options ul li label {
-  font-weight: 400;
-  font-size: 12px;
-  padding: 0 0 0 24px;
-  border: none;
-  background: transparent;
-}
-
-.category__filters__item .ms-options-wrap > .ms-options ul li label input {
+.category__filters__item .ms-options-wrap > .ms-options li input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.category__filters__item .ms-options-wrap > .ms-options ul li label:before {
+.category__filters__item .ms-options-wrap > .ms-options li label {
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0 0 0 24px;
+  border: none;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.category__filters__item .ms-options-wrap > .ms-options li label:before {
   content: '';
   position: absolute;
   width: 18px;
@@ -2537,17 +2540,21 @@ html {
   background: #fff;
 }
 
-.category__filters__item .ms-options-wrap > .ms-options ul li label:hover {
+.category__filters__item .ms-options-wrap > .ms-options li label:hover {
   border: none;
   background: transparent;
 }
 
-.category__filters__item .ms-options-wrap > .ms-options ul li.selected label {
+.category__filters__item .ms-options-wrap > .ms-options li input[type="checkbox"]:checked + label {
   background: transparent;
 }
 
-.category__filters__item .ms-options-wrap > .ms-options ul li.selected label:before {
+.category__filters__item .ms-options-wrap > .ms-options li input[type="checkbox"]:checked + label:before {
   background: url(../img/check-2.png) center center no-repeat #bfbfbf;
+}
+
+.category__filters__item .ms-options-wrap.open > .ms-options {
+  visibility: visible;
 }
 
 @media (max-width: 991px) {
