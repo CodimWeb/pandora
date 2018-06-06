@@ -167,8 +167,6 @@ $(document).on("click.bs.dropdown.data-api", ".noclose", function (e) { e.stopPr
 
 
   $('body').on('change',".filter-check", function (){
-    console.log($(this));
-    console.log($('.dropdown.open input:checkbox:checked').length);
     var length = $('.dropdown.open input:checkbox:checked').length;
     if(length  < 1) {
       var name = $(this).parents('.dropdown').find('button').data('name');
@@ -179,5 +177,24 @@ $(document).on("click.bs.dropdown.data-api", ".noclose", function (e) { e.stopPr
     }
     $('.dropdown.open .category__filters__name').text(name);
   });
+
+  getCheckedName();
   
 });
+
+
+function getCheckedName(){
+	$('.category__filters__item .dropdown').each(function(){
+		var length = $(this).find('input:checkbox:checked').length;
+		console.log(length);
+	    if(length  < 1) {
+	      var name = $(this).find('button').data('name');
+	    } else if (length == 1) {
+	      var name = $(this).find('input:checkbox:checked').siblings('label').text();
+	    } else {
+	      var name = 'Выбрано ' + length;
+	    }
+	    $(this).find('.category__filters__name').text(name);
+	});
+	
+}
