@@ -3225,6 +3225,10 @@ html {
   margin: 0;
 }
 
+.basket__item__description.desires-description {
+  width: calc(100% - 80px);
+}
+
 @media (max-width: 1199px) {
   .basket__item__description {
     width: 57%;
@@ -3643,6 +3647,8 @@ html {
   border: none;
   margin-top: -2px;
   right: -5px;
+  max-height: 270px;
+  overflow-y: auto;
 }
 
 .order-form .dropdown .dropdown-menu li a {
@@ -3654,6 +3660,19 @@ html {
 .order-form .dropdown .dropdown-menu li a:hover {
   background: transparent;
   color: #F86351;
+}
+
+.order-form .dropdown .dropdown-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.order-form .dropdown .dropdown-menu::-webkit-scrollbar-track {
+  background: #e6e6e6;
+  margin-right: 20px;
+}
+
+.order-form .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+  background: #333;
 }
 
 .order-form .dropdown.open .btn-default {
@@ -3669,7 +3688,6 @@ html {
 
 .order-form .dropdown.open .dropdown-menu {
   box-shadow: 0 3px 4px 1px rgba(249, 99, 81, 0.15);
-  border-radius: 0 0 25px 25px;
   padding: 0;
 }
 
