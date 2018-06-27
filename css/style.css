@@ -952,6 +952,7 @@ html {
 }
 
 .footer__content {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -1004,8 +1005,6 @@ html {
 
 @media (max-width: 479px) {
   .footer__right {
-    -ms-flex: 1;
-        flex: 1;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0 -10px;
@@ -1165,6 +1164,36 @@ html {
 @media (max-width: 767px) {
   .footer {
     padding: 25px 0 30px;
+  }
+}
+
+.footer__studio {
+  width: 140px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.footer__studio img {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.footer__studio:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .footer__studio {
+    position: static;
+    margin: 15px auto;
   }
 }
 

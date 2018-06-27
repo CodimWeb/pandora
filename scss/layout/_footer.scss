@@ -2,6 +2,7 @@
   background: #463b49;
   padding: 25px 0 55px;
   &__content {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -34,7 +35,6 @@
     }
 
     @media (max-width: 479px) {
-      flex: 1;
       flex-wrap: wrap;
       margin: 0 -10px;
     }
@@ -179,5 +179,33 @@
 
   @media (max-width: 767px) {
     padding: 25px 0 30px;
+  }
+
+  &__studio {
+    width: 140px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    text-decoration: underline;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+
+    img {
+      width: 100%;
+      margin-bottom: 6px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    @media (max-width: 767px) {
+      position: static;
+      margin: 15px auto;
+    }
   }
 }
