@@ -24,6 +24,33 @@ $(document).ready(function(){
     });
   });
 
+  $('.has-dropdown').mouseenter(function(e){
+    var target = $(this).data('target');
+    $('.has-dropdown').removeClass('active');
+    $(this).addClass('active');
+    $('.nav-dropdown').removeClass('nav-dropdown-hidden');
+    $('.nav-dropdown__item').addClass('hidden');
+    $('[data-item='+target+']').removeClass('hidden');
+  });
+
+
+
+  $('body').mousemove(function(e){
+    var el;
+    el = e.target;
+    if($(el).parents('.nav-dropdown').hasClass('nav-dropdown-open') || $(el).hasClass('has-dropdown') || $(el).hasClass('nav-dropdown') || $(el).hasClass('nav')){
+      //$('.header').css('z-index','1000');
+    }
+    else {
+      $('.nav-dropdown').addClass('nav-dropdown-hidden');
+      $('.nav-dropdown__item').addClass('hidden');
+      $('.has-dropdown').removeClass('active');
+
+      // cnt = 0;
+      // $('.header').removeAttr('style');
+    }
+  });
+
   $(".main-slider .owl-carousel").owlCarousel({
     items : 1,
     navigation : true,
